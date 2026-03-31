@@ -2,25 +2,23 @@
 <html lang="en">
 
 <head>
-    <title>Jina AI Deep Search</title>
+    <title>PNT Deep Search</title>
     <meta charset="utf-8">
     <meta name="theme-color" content="#009191">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="title" content="Jina AI Deep Search">
-    <meta name="description" content="AI deep search: read, reason, search until best answer found.">
+    <meta name="title" content="PNT Deep Search">
+    <meta name="description" content="Deep search — Policy Network For Transitions">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://search.jina.ai">
-    <meta property="og:title" content="Jina AI Deep Search">
-    <meta property="og:description" content="AI deep search: read, reason, search until best answer found.">
-    <meta property="og:image" content="https://search.jina.ai/banner.png">
-    <meta property="twitter:site" content="@JinaAI_">
-    <meta name="twitter:creator" content="@JinaAI_">
+    <meta property="og:url" content="https://deepresearch.policynetworkfortransitions.org">
+    <meta property="og:title" content="PNT Deep Search">
+    <meta property="og:description" content="Deep search — Policy Network For Transitions">
+    <meta property="og:image" content="https://policynetworkfortransitions.org/wp-content/uploads/2026/03/deep-search.webp">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://search.jina.ai">
-    <meta property="twitter:title" content="Jina AI Deep Search">
-    <meta property="twitter:description" content="AI deep search: read, reason, search until best answer found.">
-    <meta property="twitter:image" content="https://search.jina.ai/banner.png">
+    <meta property="twitter:url" content="https://deepresearch.policynetworkfortransitions.org">
+    <meta property="twitter:title" content="PNT Deep Search">
+    <meta property="twitter:description" content="Deep search — Policy Network For Transitions">
+    <meta property="twitter:image" content="https://policynetworkfortransitions.org/wp-content/uploads/2026/03/deep-search.webp">
     <meta name="viewport" content="initial-scale=1,maximum-scale=5,minimum-scale=1,width=device-width">
     <script defer src="third-party/markdown-it.min.js"></script>
     <script defer src="third-party/markdown-it-footnote.min.js"></script>
@@ -28,14 +26,14 @@
     <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/ico" href="favicon.ico">
-    <link rel="canonical" href="https://search.jina.ai" />
+    <link rel="canonical" href="https://deepresearch.policynetworkfortransitions.org" />
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebApplication",
-            "name": "Jina AI Deep Search",
-            "description": "AI deep search: read, reason, search until best answer found.",
-            "url": "https://search.jina.ai"
+            "name": "PNT Deep Search",
+            "description": "Deep search — Policy Network For Transitions",
+            "url": "https://deepresearch.policynetworkfortransitions.org"
         }
     </script>
 </head>
@@ -89,18 +87,6 @@
                 </div>
             </div>
             <div class="buttons-group">
-                <button id="toggle-api-key" class="icon-button tooltip-container"
-                    aria-label="Upgrade to higher rate limit">
-                    <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" aria-hidden="true">
-                        <path
-                            d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
-                        </path>
-                    </svg>
-                    <span data-label="buttons.addKey">Key</span>
-                    <span class="tooltip" data-label="tooltips.upgrade">Upgrade to higher rate limit</span>
-                </button>
                 <button id="theme-toggle-button" class="tooltip-container" aria-label="Toggle theme">
                     <svg id="theme-icon" class="action-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -118,12 +104,7 @@
         </main>
 
         <form id="input-area">
-            <svg id="logo" viewBox="0 0 240 100" xmlns="http://www.w3.org/2000/svg">
-                <circle fill="#E85F5F" cx="16" cy="84" r="16" />
-                <circle fill="#F9C964" cx="100" cy="16" r="16" />
-                <path fill="#008F8F"
-                    d="M64 36c2.2 0 4 1.8 4 4v28c0 16.6-13.4 30-30 30h-2V68 40c0-2.2 1.8-4 4-4h24zm48 0c2.2 0 4 1.8 4 4v40c0 2.2-1.8 4-4 4H88c-2.2 0-4-1.8-4-4V40c0-2.2 1.8-4 4-4h24zm36 0h2c16 0 28 12 28 28v16c0 2.2-1.8 4-4 4h-38c-2.2 0-4-1.8-4-4V40c0-2.2 1.8-4 4-4h12zm64 48c-12.8-0.8-22-11.2-22-24 0-13.2 10.8-24 24-24 12.8 0 23.2 9.2 24 22v22c0 2.2-1.8 4-4 4h-22z" />
-            </svg>
+<img id="logo" src="https://policynetworkfortransitions.org/wp-content/uploads/2026/03/deep-search.webp" alt="AZMENA Deep Search" style="height:45px; width:auto;">
             <div id="file-preview-container"></div>
             <div id="message-input-container">
                 <textarea type="search" id="message-input" maxlength="2000" autocomplete="off" autocapitalize="off"
@@ -177,66 +158,6 @@
     </div>
 
     <!-- Add the dialog HTML -->
-    <div class="dialog-overlay" id="api-key-dialog" role="dialog" aria-labelledby="api-key-dialog-title"
-        aria-modal="true">
-        <div class="dialog">
-            <div class="dialog-header">
-                <span class="dialog-title" id="api-key-dialog-title" data-label="dialogs.apiKey.title">Upgrade to Higher
-                    Rate Limit</span>
-                <button class="dialog-close" aria-label="Close dialog">&times;</button>
-            </div>
-            <div class="dialog-content">
-                <p id="free-user-rpm" data-html="dialogs.apiKey.freeUserRpm">You can send <b>3 requests per minute</b>.
-                </p>
-                <p class="dialog-description" data-label="dialogs.apiKey.description">Use your Jina API key to access a
-                    higher rate limit. You can get a free API key and learn more about rate limits on our website.</p>
-                <div style="position: relative; display: flex; align-items: center; gap: 6px; margin-bottom: 12px;">
-
-                    <input type="password" id="api-key-input" data-placeholder="placeholders.apiKeyInput"
-                        placeholder="Enter your API key" autocomplete="new-password" aria-label="API key input"
-                        style="flex: 1 1 auto;">
-                    <button id="open-jina-site" type="button" aria-label="Open Jina.ai website"
-                        class="action-icon link-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-external-link">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </button>
-                </div>
-
-                <ul class="help-list">
-                    <li data-html="dialogs.help.list.2">Add to your browser's search engines via
-                        <code>https://search.jina.ai/?q={YOUR_QUERY}</code>
-                    </li>
-                    <li data-html="dialogs.help.list.3">This <i>is</i> our product, not a POC or hype-chasing gimmick.
-                        Interested in on-prem deploy? Contact
-                        us.
-                    </li>
-                </ul>
-            </div>
-            <div class="dialog-footer">
-                <a id="get-api-key" href="https://jina.ai/deepsearch" target="_blank">
-                    <button class="link-button" aria-label="Get API Key" data-label="buttons.getKey">Get API
-                        Key</button>
-                </a>
-                <a href="https://jina.ai/contact-sales" target="_blank">
-                    <button id="contact-us" class="icon-button link-button" aria-label="Contact Jina AI sales">
-                        <svg class="action-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                        </svg>
-                        <span data-label="buttons.contactUs">Contact Us</span>
-                    </button>
-                </a>
-                <button id="save-api-key" aria-label="Save API key" data-label="buttons.saveKey">Save</button>
-            </div>
-        </div>
-    </div>
     <!-- Settings dialog -->
     <div class="dialog-overlay" id="settings-dialog" role="dialog" aria-labelledby="settings-dialog-title"
         aria-modal="true">
@@ -424,7 +345,10 @@
     <script defer src="hljs.js"></script>
     <script defer src="utils.js"></script>
     <script defer src="app.js"></script>
-
+<footer style="text-align:center; padding:10px; font-size:11px; color:#999;">
+    Powered by <a href="https://github.com/jina-ai/deepsearch-ui" target="_blank" style="color:#888; text-decoration:underline;">Jina DeepSearch</a>
+    · <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" style="color:#888; text-decoration:underline;">Apache 2.0</a>
+</footer>
 </body>
 
 </html>
