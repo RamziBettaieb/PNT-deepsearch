@@ -180,7 +180,7 @@ const newChatButton = document.getElementById('new-chat-button');
 const apiKeyInput = document.getElementById('api-key-input');
 const saveApiKeyBtn = document.getElementById('save-api-key');
 const toggleApiKeyBtn = document.getElementById('toggle-api-key');
-const toggleApiKeyBtnText = toggleApiKeyBtn.querySelector('span');
+const toggleApiKeyBtnText = toggleApiKeyBtn ? toggleApiKeyBtn.querySelector('span') : null;
 const getApiKeyBtn = document.getElementById('get-api-key');
 const freeUserRPMInfo = document.getElementById('free-user-rpm');
 const apiKeyDialog = document.getElementById('api-key-dialog');
@@ -207,7 +207,7 @@ const navigationDialog = document.getElementById('navigation-dialog');
 const imageReferencesDialog = document.getElementById('image-references-dialog');
 const selectedImageReference = document.getElementById('selected-image-reference');
 
-const BASE_ORIGIN = 'https://deepsearch.jina.ai';
+const BASE_ORIGIN = 'https://deepresearch.policynetworkfortransitions.org';
 const FAVICON_BASE_URL = 'https://favicon-fetcher.jina.ai';
 
 // SVG icons
@@ -263,6 +263,7 @@ function parseCookieString(cookieString) {
 
 // API Key Management
 function initializeApiKey() {
+    if (!toggleApiKeyBtnText) return;
     let savedKey = localStorage.getItem('api_key');
     if (!savedKey) {
         const cookies = parseCookieString(document.cookie);
@@ -271,11 +272,12 @@ function initializeApiKey() {
             localStorage.setItem('api_key', savedKey);
         }
     }
-    apiKeyInput.value = savedKey;
-    getApiKeyBtn.style.display = savedKey ? 'none' : 'block';
-    freeUserRPMInfo.style.display = savedKey ? 'none' : 'block';
-    toggleApiKeyBtnText.textContent = savedKey ? UI_STRINGS.buttons.updateKey() : UI_STRINGS.buttons.addKey();
+    if (apiKeyInput) apiKeyInput.value = savedKey;
+    if (getApiKeyBtn) getApiKeyBtn.style.display = savedKey ? 'none' : 'block';
+    if (freeUserRPMInfo) freeUserRPMInfo.style.display = savedKey ? 'none' : 'block';
+    if (toggleApiKeyBtnText) toggleApiKeyBtnText.textContent = savedKey ? UI_STRINGS.buttons.updateKey() : UI_STRINGS.buttons.addKey();
 }
+
 
 function generateId(type = 'message') {
     return `${type}-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`;
