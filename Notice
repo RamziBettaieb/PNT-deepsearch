@@ -1,0 +1,15 @@
+PNT Deep Search
+Copyright 2026 Policy Network For Transitions
+
+This product includes software developed by Jina AI GmbH
+(https://jina.ai) — originally published as "Jina DeepSearch UI"
+under the Apache License 2.0.
+
+Original work: https://github.com/jina-ai/deepsearch-ui
+Copyright 2024-2025 Jina AI GmbH
+
+Modifications by Policy Network For Transitions:
+- Replaced Jina branding with PNT branding
+- Removed API key upgrade dialog
+- Connected to self-hosted DeepResearch backend
+- Updated meta tags and SEO references
