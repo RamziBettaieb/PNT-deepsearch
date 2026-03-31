@@ -656,7 +656,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-saveApiKeyBtn.addEventListener('click', handleApiKeySave);
+if (saveApiKeyBtn) saveApiKeyBtn.addEventListener('click', handleApiKeySave);
 
 // Message display functions
 function createReferencesSection(content, visitedURLs = [], numURLs = 0) {
@@ -2375,7 +2375,7 @@ mainContainer.addEventListener('scroll', () => {
 
 // Update toggleApiKeyBtn click handler
 toggleApiKeyBtn.addEventListener('click', () => {
-    apiKeyDialog.classList.add('visible');
+    if (apiKeyDialog) apiKeyDialog.classList.add('visible');
 });
 
 // Update dialog close handlers
@@ -2404,7 +2404,7 @@ function handleApiKeySave() {
         freeUserRPMInfo.style.display = 'block';
         toggleApiKeyBtnText.textContent = UI_STRINGS.buttons.addKey();
     }
-    apiKeyDialog.classList.remove('visible');
+    if (apiKeyDialog) apiKeyDialog.classList.remove('visible');
 }
 
 // Set up event listeners for visibility and focus changes
